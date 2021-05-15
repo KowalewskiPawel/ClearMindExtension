@@ -29,7 +29,7 @@ setInterval(() => {
 
   (async function () {
     const grid = await document.querySelector(
-      ".ytd-two-column-browse-results-renderer"
+      "ytd-rich-grid-renderer"
     );
     grid.style.display = "none";
   })();
