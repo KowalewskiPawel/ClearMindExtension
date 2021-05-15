@@ -21,23 +21,21 @@
 
 */
 
-setInterval(() =>{
-    (async function() {
+setInterval(() => {
+  (async function () {
     const skipBtn = await document.querySelector(".ytp-ad-skip-button");
     skipBtn.click();
-    })();
-}, 500);
+  })();
 
-setInterval(() =>{
-    (async function() {
-        const grid = await document.querySelector(".ytd-two-column-browse-results-renderer");
-        grid.style.display = "none";
-        })();
-}, 500);
+  (async function () {
+    const grid = await document.querySelector(
+      ".ytd-two-column-browse-results-renderer"
+    );
+    grid.style.display = "none";
+  })();
 
-setInterval(() =>{
-    (async function() {
-        const side = await document.querySelector("#secondary-inner");
-        side.style.display = "none";
-        })();
+  (async function () {
+    const side = await document.querySelector("#secondary-inner");
+    side.style.display = "none";
+  })();
 }, 500);
